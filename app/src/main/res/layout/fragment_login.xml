@@ -193,24 +193,21 @@
 
                 <Button
                     android:id="@+id/homeButton"
-                    style="@style/Widget.Button.Primary"
+                    style="@style/Widget.Button.Google"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="22dp"
                     android:layout_weight="1"
-                    android:background="#FFFFFF"
                     android:drawableLeft="@drawable/ic_google"
-                    android:text="Google"
-                    android:textColor="#7D7F7E" />
+                    android:text="Google"/>
 
                 <Button
                     android:id="@+id/noticiasButton"
-                    style="@style/Widget.Button.Primary"
+                    style="@style/Widget.Button.Fb"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="22dp"
                     android:layout_weight="1"
-                    android:background="#3975EA"
                     android:drawableLeft="@drawable/ic_facebook"
                     android:text="Facebook" />
 

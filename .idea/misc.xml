@@ -7,6 +7,8 @@
         <entry key="../../Library/Android/sdk/platforms/android-31/data/res/drawable/ratingbar_indicator_material.xml" value="0.1645" />
         <entry key="../../Library/Android/sdk/platforms/android-31/data/res/layout/notification_template_conversation_header.xml" value="0.15081521739130435" />
         <entry key="app/src/main/res/drawable-v24/background_input_text.xml" value="0.1645" />
+        <entry key="app/src/main/res/drawable/button_fb_background.xml" value="0.1645" />
+        <entry key="app/src/main/res/drawable/button_google_background.xml" value="0.1645" />
         <entry key="app/src/main/res/drawable/button_primary_background.xml" value="0.375" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1645" />
         <entry key="app/src/main/res/drawable/spinner_background.xml" value="0.335" />

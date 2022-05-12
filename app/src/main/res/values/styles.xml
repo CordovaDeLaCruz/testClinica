@@ -7,6 +7,7 @@
         <item name="colorPrimary">@color/PrimaryPurpleDarkest</item>
         <item name="colorPrimaryDark">@color/PrimaryPurpleDarkest</item>
         <item name="colorAccent">@color/PrimaryPurpleDarkest</item>
+        <item name="buttonStyle">@style/Widget.Button.Primary</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -22,6 +23,34 @@
 
     <style name="Widget.Button.Primary" parent="@style/Widget.AppCompat.Button.Borderless">
         <item name="android:background">@drawable/button_primary_background</item>
+        <item name="android:fontFamily">@font/gotham_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="Widget.Button.Google" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/button_google_background</item>
+        <item name="android:fontFamily">@font/gotham_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#7D7F7E</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="Widget.Button.Fb" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/button_fb_background</item>
         <item name="android:fontFamily">@font/gotham_medium</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>

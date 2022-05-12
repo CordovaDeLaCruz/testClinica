@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "864941962786",
+    "project_id": "test-clinica-internacional",
+    "storage_bucket": "test-clinica-internacional.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864941962786:android:9235fea43fb4acfdff7c7b",
+        "android_client_info": {
+          "package_name": "com.example.testclinica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864941962786-78furtsqnpbsjmvnqplsmd5a6f85s1ma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBatQJlabiC4Ku5hcMc40-Q_mSrrr0lnr8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864941962786-78furtsqnpbsjmvnqplsmd5a6f85s1ma.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
