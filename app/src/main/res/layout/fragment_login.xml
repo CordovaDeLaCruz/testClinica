@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsvScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#F4F7FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTypeDocument"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gotham_medium"
+                android:text="Tipo de documento *"
+                android:textColor="#0033A0"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/edtValueTypeDocument"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spinner_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTypeDocument">
+
+                <ImageView
+                    android:id="@+id/imgExpandable"
+                    android:layout_width="14dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginBottom="18dp"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_arrow_bottom_blue">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txtOperatorSelect"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/gotham_medium"
+                    android:text="DNI"
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imgExpandable"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/txtLblDocument"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/gotham_medium"
+                android:text="Número de documento *"
+                android:textColor="#0033A0"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtValueTypeDocument" />
+
+            <com.example.testclinica.TextInputEditTextSupport
+                android:id="@+id/edtValueDocument"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/spinner_background"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/gotham_medium"
+                android:hint="Ingresa tu número de documento"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textColorHint="#ACB1B6"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtLblDocument" />
+
+            <TextView
+                android:id="@+id/txtLblPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/gotham_medium"
+                android:text="Fecha de emisión del DNI"
+                android:textColor="#0033A0"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtValueDocument" />
+
+            <com.example.testclinica.TextInputEditTextSupport
+                android:id="@+id/edtValuePass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/spinner_background"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/gotham_medium"
+                android:hint="DD/MM/AA"
+                android:inputType="date"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textColorHint="#ACB1B6"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtLblPass" />
+
+            <Button
+                android:id="@+id/btnAcept"
+                style="@style/Widget.Button.Primary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="82dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="82dp"
+                android:text="Continuar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtValuePass" />
+
+            <TextView
+                android:id="@+id/txtLblRestPass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/gotham_medium"
+                android:gravity="center_horizontal"
+                android:text="Recuperar contraseña"
+                android:textColor="#0033A0"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnAcept" />
+
+            <TextView
+                android:id="@+id/txtLblOther"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/gotham_medium"
+                android:gravity="center_horizontal"
+                android:text="Inicia sesión con tus redes sociales"
+                android:textColor="#2F2F2F"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtLblRestPass" />
+
+            <LinearLayout
+                android:id="@+id/menuLinearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtLblOther">
+
+                <Button
+                    android:id="@+id/homeButton"
+                    style="@style/Widget.Button.Primary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="22dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:drawableLeft="@drawable/ic_google"
+                    android:text="Google"
+                    android:textColor="#7D7F7E" />
+
+                <Button
+                    android:id="@+id/noticiasButton"
+                    style="@style/Widget.Button.Primary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_weight="1"
+                    android:background="#3975EA"
+                    android:drawableLeft="@drawable/ic_facebook"
+                    android:text="Facebook" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtLblGuest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/gotham_medium"
+                android:gravity="center_horizontal"
+                android:text="Ingresar como invitado"
+                android:textColor="#8DA5D0"
+                android:textColorHint="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/menuLinearLayout" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
